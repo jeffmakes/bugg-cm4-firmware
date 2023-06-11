@@ -11,8 +11,8 @@ parser.add_argument("-p", "--phantom", choices=['none', 'pip', 'p48', '3v3'], re
 args = parser.parse_args()
 gain = int(args.gain)
 
-if not (gain >= 0 and gain <= 31):
-    print("gain must be between 0 and 31")
+if not (gain >= 0 and gain <= 20):
+    print("gain must be between 0 and 20")
     exit(-1)
 
 if args.phantom ==  "none":
