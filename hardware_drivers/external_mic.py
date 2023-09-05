@@ -24,6 +24,8 @@ elif args.phantom == "p48":
 elif args.phantom == "3v3":
     gpo = 1<<1
 
+print("Setting phantom to {} and gain to {} dB".format(args.phantom, gain*3))
+
 spi = spidev.SpiDev()
 bus = 0     #SPI0
 device = 0  #CS0
